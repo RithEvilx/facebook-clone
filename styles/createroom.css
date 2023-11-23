@@ -1,0 +1,107 @@
+.create-room {
+    width: 590px;
+    height: 70px;
+    margin: 20px 0 0 65px;
+    padding: 5px 5px 5px 25px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    box-shadow: 0 1px 5px rgba(168, 166, 166, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.create-room .create-room-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 3px solid rgba(22, 123, 218, 0.2);
+    color: rgb(22, 123, 218);
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.create-room .create-room-txt img {
+    height: 27px;
+    margin-right: 5PX;
+}
+.create-room .create-room-txt:hover {
+    background-color: rgba(168, 166, 166, 0.1);
+}
+.create-room .profile-box {
+    display: flex;
+}
+.profile-box .profile-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+.profile-box .profile-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-box .profile-item .active {
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 20;
+}
+.profile-box .profile-item .white-space {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+}
+
+.profile-box .item-1 .say-hi,
+.profile-box .item-2 .say-hi,
+.profile-box .item-3 .say-hi,
+.profile-box .item-4 .say-hi,
+.profile-box .item-5 .say-hi,
+.profile-box .item-6 .say-hi { 
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.profile-box .item-1 .tooltip,
+.profile-box .item-2 .tooltip,
+.profile-box .item-3 .tooltip,
+.profile-box .item-4 .tooltip,
+.profile-box .item-5 .tooltip,
+.profile-box .item-6 .tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -70px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.5);
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.profile-box .item-1:hover .tooltip,
+.profile-box .item-2:hover .tooltip,
+.profile-box .item-3:hover .tooltip,
+.profile-box .item-4:hover .tooltip,
+.profile-box .item-5:hover .tooltip,
+.profile-box .item-6:hover .tooltip {
+    opacity: 1;
+}

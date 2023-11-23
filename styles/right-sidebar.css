@@ -1,0 +1,253 @@
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    width: 330px;
+}
+
+/* Friend-Request-Block */
+.friend-request-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* friend-request-title */
+.friend-request-title {
+    display: grid;
+    grid-template-columns: 250px 90px;
+    align-items: center;
+    width: 100%;
+}
+
+.friend-request-title .friend-request {
+    color: rgb(96, 96, 96, 0.9);
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.friend-request-title .see-all {
+    color: rgba(0, 38, 255, 0.685);
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+
+.friend-request-title .see-all:hover {
+    background-color: rgb(96, 96, 96, 0.1);
+}
+
+/* End friend-request-title */
+
+/* friend-request-box */
+.friend-request-box {
+    display: grid;
+    grid-template-columns: 70px 230px;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.15s;
+}
+
+.friend-request-box:hover {
+    background-color: rgba(226, 222, 222, 0.514);
+}
+
+.friend-request-box .profile-picture img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.friend-request-box .content-request .request-informations {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.request-informations .date-request {
+    color: rgb(96, 96, 96, 0.7);
+}
+
+.friend-request-box .mutual-friend {
+    display: flex;
+    padding: 10px 0;
+}
+
+.mutual-friend .profile-mutual-friend {
+    position: relative;
+    margin-right: 20px;
+}
+
+.mutual-friend .profile-mutual-friend .img2 {
+    position: absolute;
+    left: 15px;
+}
+
+.mutual-friend .profile-mutual-friend img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mutual-friend .txt-mutual-friend {
+    color: rgb(96, 96, 96, 0.7);
+    font-weight: lighter;
+}
+
+.btn-request {
+    display: flex;
+}
+
+.btn-request .btn-confirm {
+    background-color: rgb(14, 137, 252);
+    color: white;
+    margin-right: 10px;
+    padding: 12px 23px;
+}
+
+.btn-request .btn-delete {
+    background-color: rgba(221, 220, 218, 0.4);
+    color: black;
+    padding: 12px 30px;
+}
+
+.btn-request .btn-delete:hover {
+    background-color: rgba(221, 220, 218, 0.829);
+}
+
+.btn-request .btn-confirm,
+.btn-request .btn-delete {
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* End friend-request-box */
+/* End Friend-Request-Block */
+
+/* Contact-Block */
+/* Option-Box  */
+.option-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+.option-box .txt-contact {
+    color: rgb(96, 96, 96, 0.9);
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.option-box .option-box-icon {
+    display: grid;
+    grid-template-columns: 45px 45px 50px;
+}
+
+.option-box .new-call-icon img,
+.option-box .search-icon img,
+.option-box .option-icon img {
+    height: 22px;
+}
+
+.option-box .new-call-icon,
+.option-box .search-icon,
+.option-box .option-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+.option-box .new-call-icon .tooltip,
+.option-box .search-icon .tooltip,
+.option-box .option-icon .tooltip {
+    position: absolute;
+    bottom: -55px;
+    right: 10%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.option-box .new-call-icon:hover .tooltip,
+.option-box .search-icon:hover .tooltip,
+.option-box .option-icon:hover .tooltip {
+    opacity: 1;
+}
+
+.option-box .new-call-icon:hover,
+.option-box .search-icon:hover,
+.option-box .option-icon:hover {
+    background-color: rgb(96, 96, 96, 0.1);
+}
+
+/* End Option-Box  */
+
+/* Contact-Box */
+.contact {
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+
+.contact:hover {
+    background-color: rgb(96, 96, 96, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact-item .active-icon {
+    position: absolute;
+    bottom: 1px;
+    left: 27px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.76);
+    z-index: 20;
+}
+.contact-item .white-wrap-icon {
+    position: absolute;
+    bottom: -2px;
+    left: 24px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+}
+.contact .contact-item img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+/* End Contact-Box */
+/* End Contact-Block */

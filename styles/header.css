@@ -1,0 +1,202 @@
+/* Header */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border: 1px solid rgba(128, 128, 128, 0.192);
+    box-shadow: 0 3px 5px rgba(128, 128, 128, 0.144);
+    background-color: white;
+    z-index: 300;
+}
+
+/* Left-Section */
+.left-section {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 5px;
+}
+
+.left-section .facebook-icon img {
+    height: 50px;
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section .btn-search {
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 96, 96, 0.1);
+    margin-left: -5px;
+}
+
+.left-section .btn-search img {
+    height: 22px;
+    opacity: 0.7;
+}
+
+/* Middle-Section */
+.middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    max-width: 750px;
+    margin-left: 130px;
+}
+
+.middle-section img,
+.left-section .more-icon img {
+    height: 30px;
+}
+
+.middle-section .home-icon img{
+    filter: invert(24%) sepia(100%) saturate(1920%) hue-rotate(225deg) brightness(89%) contrast(93%);
+}
+.middle-section .home-icon {
+    border-bottom: 4px solid #384DDA;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+}
+
+.middle-section .watch-icon,
+.middle-section .marketplace-icon,
+.middle-section .groups-icon,
+.middle-section .gaming-icon,
+.middle-section .more-icon,
+.left-section .more-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+
+.middle-section .watch-icon:hover,
+.middle-section .marketplace-icon:hover,
+.middle-section .groups-icon:hover,
+.middle-section .gaming-icon:hover,
+.middle-section .more-icon:hover,
+.left-section .more-icon:hover {
+    background-color: rgb(96, 96, 96, 0.1);
+}
+
+/* Right-Section */
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.right-section img {
+    height: 27px;
+}
+
+.right-section .menu-icon,
+.right-section .messenger-icon,
+.right-section .notifications-icon,
+.right-section .account-icon,
+.right-section .plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section .menu-icon:hover,
+.right-section .messenger-icon:hover,
+.right-section .notifications-icon:hover,
+.right-section .plus-icon:hover {
+    background-color: rgb(96, 96, 96, 0.2);
+    position: relative;
+}
+
+.right-section .menu-icon,
+.right-section .messenger-icon,
+.right-section .notifications-icon,
+.right-section .plus-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(96, 96, 96, 0.1);
+    margin: 0 6px;
+}
+
+
+.right-section .account-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin: 6px;
+}
+
+/* Tool-Tip */
+.middle-section .home-icon .tooltip,
+.middle-section .watch-icon .tooltip,
+.middle-section .marketplace-icon .tooltip,
+.middle-section .groups-icon .tooltip,
+.middle-section .gaming-icon .tooltip,
+.middle-section .more-icon .tooltip,
+.left-section .more-icon .tooltip,
+.right-section .plus-icon .tooltip,
+.right-section .menu-icon .tooltip,
+.right-section .messenger-icon .tooltip,
+.right-section .notifications-icon .tooltip,
+.right-section .account-icon .tooltip {
+    position: absolute;
+    bottom: -47px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.right-section .menu-icon .tooltip,
+.right-section .messenger-icon .tooltip,
+.right-section .notifications-icon .tooltip,
+.right-section .plus-icon .tooltip {
+    bottom: -57px;
+}
+
+.middle-section .home-icon:hover .tooltip,
+.middle-section .watch-icon:hover .tooltip,
+.middle-section .marketplace-icon:hover .tooltip,
+.middle-section .groups-icon:hover .tooltip,
+.middle-section .gaming-icon:hover .tooltip,
+.middle-section .more-icon:hover .tooltip,
+.left-section .more-icon:hover .tooltip,
+.right-section .plus-icon:hover .tooltip,
+.right-section .menu-icon:hover .tooltip,
+.right-section .messenger-icon:hover .tooltip,
+.right-section .notifications-icon:hover .tooltip,
+.right-section .account-icon:hover .tooltip {
+    opacity: 1;
+}
+.middle-section .more-icon,
+.left-section .more-icon,
+.right-section .plus-icon {
+    display: none;
+}
+/* End Tool-Tip */

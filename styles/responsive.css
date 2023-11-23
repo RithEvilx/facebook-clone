@@ -1,0 +1,417 @@
+/*Extra large devices (large desktops, 1200px and up) xl */
+@media (min-width: 1355px) and (max-width: 1500PX) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .story-container .fourth-child {
+        display: none;
+    }
+
+    .story-container {
+        width: 650px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .story-container .story {
+        height: 270px;
+    }
+
+    .status-post,
+    .create-room,
+    .post-content {
+        margin: 30px 0 0 15px;
+    }
+
+    body {
+        padding: 90px 330px 0 345px;
+    }
+
+    .right-sidebar {
+        width: 290px;
+    }
+}
+
+/*Large devices (desktops, 992px and up) lg */
+@media (min-width: 1220px) and (max-width: 1355px) {
+    body {
+        padding: 90px 340px 0 90px;
+    }
+    .header .middle-section {
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        margin-left: 75px;
+    }
+    .left-sidebar {
+        display: none;
+    }
+    .middle-section .gaming-icon {
+        display: none;
+    }
+    .middle-section .more-icon {
+        display: grid;
+    }
+    .right-section .menu-icon {
+        display: none;
+    }
+    .right-section .plus-icon {
+        display: grid;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1220px) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .middle-section {
+        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+        margin-left: 75px;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+    .left-sidebar {
+        display: none;
+    }
+    .middle-section .gaming-icon {
+        display: none;
+    }
+    .middle-section .more-icon {
+        display: grid;
+    }
+    .right-section .menu-icon {
+        display: none;
+    }
+    .right-section .plus-icon {
+        display: grid;
+    }
+}
+@media (min-width: 1040) and (max-width: 1090px) {
+    .header .middle-section {
+        grid-template-columns: repeat(auto-fit,minmax(70px,1fr));
+        margin-left: 35px;
+    }
+}
+@media (min-width: 920px) and (max-width: 1040px) {
+    .header {
+        margin: 0 20px;
+    }
+    .header .middle-section {
+        grid-template-columns: repeat(auto-fit,minmax(85px,1fr));
+    }
+}
+@media (min-width: 870px) and (max-width: 920px) {
+    .header .middle-section {
+        grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+        margin-left: 35px;
+    }
+}
+@media (min-width: 780px) and (max-width: 870px) {
+    .middle-section .home-icon,
+    .middle-section .watch-icon,
+    .middle-section .marketplace-icon,
+    .middle-section .groups-icon,
+    .middle-section .gaming-icon,
+    .middle-section .more-icon {
+        display: none;
+    }
+    .left-section .more-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 15px 15px;
+        margin-left: 10px;
+    }
+    .middle-section {
+        display: none;
+    }
+}
+@media (min-width: 670px) and (max-width: 780px) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .middle-section {
+        grid-template-columns: 110px 110px 110px 110px 110px;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .story-container .fourth-child {
+        display: none;
+    }
+
+    .story-container {
+        width: 640px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .status-post,
+    .create-room,
+    .post-content {
+        margin: 30px 0 0 11px;
+        overflow: hidden;
+    }
+    .middle-section .home-icon,
+    .middle-section .watch-icon,
+    .middle-section .marketplace-icon,
+    .middle-section .groups-icon,
+    .middle-section .gaming-icon,
+    .middle-section .more-icon {
+        display: none;
+    }
+    .left-section .more-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 15px 15px;
+        margin-left: 10px;
+    }
+    .middle-section {
+        display: none;
+    }
+}
+
+@media(min-width: 645px) and (max-width: 670px) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .middle-section {
+        grid-template-columns: 110px 110px 110px 110px 110px;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .story-container .fourth-child {
+        display: none;
+    }
+
+    .story-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .story-container {
+        width: 100%;
+    }
+
+    .story-container .story {
+        height: 240px;
+    }
+
+    .story .create-story {
+        text-align: center;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .story .profile {
+        height: 75%;
+    }
+
+    .status-post,
+    .create-room,
+    .post-content {
+        margin: 30px 0 0 15px;
+        overflow: hidden;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .middle-section .home-icon,
+    .middle-section .watch-icon,
+    .middle-section .marketplace-icon,
+    .middle-section .groups-icon,
+    .middle-section .gaming-icon,
+    .middle-section .more-icon {
+        display: none;
+    }
+    .left-section .more-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 15px 15px;
+        margin-left: 10px;
+    }
+    .middle-section {
+        display: none;
+    }
+}
+
+@media(min-width: 645px) and (max-width: 670px) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .middle-section {
+        grid-template-columns: 110px 110px 110px 110px 110px;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .story-container .fourth-child {
+        display: none;
+    }
+
+    .story-container {
+        width: 640px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .status-post,
+    .create-room,
+    .post-content {
+        margin: 30px 0 0 10px;
+        overflow: hidden;
+    }
+    .middle-section .home-icon,
+    .middle-section .watch-icon,
+    .middle-section .marketplace-icon,
+    .middle-section .groups-icon,
+    .middle-section .gaming-icon,
+    .middle-section .more-icon {
+        display: none;
+    }
+    .left-section .more-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 15px 15px;
+        margin-left: 10px;
+    }
+    .middle-section {
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+    body {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .middle-section {
+        grid-template-columns: 110px 110px 110px 110px 110px;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .story-container .fourth-child {
+        display: none;
+    }
+
+    .story-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .story-container {
+        width: 100%;
+    }
+
+    .story-container .story {
+        height: 240px;
+    }
+
+    .story .create-story {
+        text-align: center;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .story .profile {
+        height: 75%;
+    }
+
+    .status-post,
+    .create-room,
+    .post-content {
+        margin: 30px 0 0 0;
+        overflow: hidden;
+    }
+
+    .status-post {
+        width: 450px;
+    }
+
+    .create-room {
+        width: 470px;
+    }
+
+    .post-content {
+        width: 500px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .middle-section .home-icon,
+    .middle-section .watch-icon,
+    .middle-section .marketplace-icon,
+    .middle-section .groups-icon,
+    .middle-section .gaming-icon,
+    .middle-section .more-icon {
+        display: none;
+    }
+    .left-section .more-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding: 15px 15px;
+        margin-left: 10px;
+    }
+    .middle-section {
+        display: none;
+    }
+}

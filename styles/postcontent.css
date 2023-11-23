@@ -1,0 +1,244 @@
+.post-content {
+    width: 620px;
+    margin: 20px 0 0 65px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    box-shadow: 0 1px 5px rgba(168, 166, 166, 0.3);
+    border-radius: 10px;
+}
+
+.post-content .profile-content {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    margin: 15px 20px;
+}
+
+/* Profile-Bar */
+.profile-content .profile-bar {
+    display: flex;
+    align-items: center;
+}
+
+.profile-bar .profile-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-bar .name-time-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-time-profile .name-profile {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.name-time-profile .name-profile:hover,
+.time-post .time:hover .time-zone {
+    text-decoration: underline black;
+}
+
+.name-time-profile .time-post {
+    display: flex;
+}
+
+.time-post .time .time-zone {
+    font-size: 15px;
+    color: rgba(96, 96, 96, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.time-post .mini-dot {
+    margin: 0 4px;
+    color: rgba(96, 96, 96, 0.7);
+}
+
+.time-post .set img {
+    height: 17px;
+}
+
+/* End Profile-Bar */
+
+/* Profile-Option */
+.profile-content .profile-option {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-content .profile-option .option-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+}
+
+.profile-content .profile-option .option-img:hover {
+    background-color: rgba(166, 166, 166, 0.1);
+}
+
+.profile-content .profile-option img {
+    height: 26px;
+}
+
+.profile-content .caption-content {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* End Profile-Option */
+
+/* Image-Content */
+.post-content .image-content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* End Image-Content */
+
+/* React-Container */
+.post-content .react-container {
+    height: 90px;
+    padding: 0 20px;
+}
+
+.react-container .react-box,
+.react-container .option-react {
+    height: 50%;
+}
+
+.react-container .react-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+}
+
+.react-box .reaction-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-box .reaction-item img {
+    height: 28px;
+    margin-right: 5px;
+}
+
+.react-box .reaction-item .number-reaction {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(96, 96, 96);
+}
+
+.react-box .reaction-item .number-reaction:hover {
+    text-decoration: underline;
+}
+
+.react-container .react-box .comment-share {
+    display: flex;
+    color: rgba(96, 96, 96, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.react-box .comment-share .comment {
+    margin-right: 10px;
+}
+
+.react-container .option-react {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-container .option-react {
+    width: 100%;
+}
+
+.react-container .option-react .like-icon:active img,
+.react-container .option-react .like-icon:active .like {
+    filter: invert(24%) sepia(100%) saturate(1920%) hue-rotate(225deg) brightness(89%) contrast(93%);
+    color: #384DDA;
+}
+
+.react-container .option-react .like-icon,
+.react-container .option-react .comment-icon,
+.react-container .option-react .share-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 5px;
+}
+
+.react-container .option-react .like-icon:hover,
+.react-container .option-react .comment-icon:hover,
+.react-container .option-react .share-icon:hover {
+    background-color: rgba(219, 215, 215, 0.3);
+}
+
+.react-container .option-react .like-icon img {
+    height: 35px;
+}
+
+.react-container .option-react .comment-icon img,
+.react-container .option-react .share-icon img {
+    height: 25px;
+    margin-right: 5px;
+    padding: 5px 0;
+}
+
+/* End React-Container */
+
+
+/* Tooltip */
+.name-time-profile .time-post .time,
+.name-time-profile .time-post .set .globe {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-post .time .tooltip {
+    position: absolute;
+    bottom: -50px;
+    padding: 15px 10px;
+    white-space: nowrap;
+    pointer-events: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.time-post .set .tooltip {
+    position: absolute;
+    top: -50px;
+    padding: 15px;
+    white-space: nowrap;
+    pointer-events: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.time-post .time:hover .tooltip,
+.time-post .set:hover .tooltip {
+    opacity: 1;
+}
+
+/* End Tooltip */

@@ -1,0 +1,9 @@
+body {
+    background-color: rgba(227, 236, 241, 0.658);
+    font-family: 'Roboto', sans-serif, 'Arail', sans-serif;
+    padding: 90px 330px 0 375px;
+    z-index: 100;
+}
+p {
+    margin: 0;
+}
